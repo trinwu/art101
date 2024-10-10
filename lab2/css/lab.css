@@ -1,9 +1,48 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
+*{
+  margin: 5px;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    border: 1px solid #0075ce;
+    background: transparent;
+    cursor: pointer;
   }
+
+#content h1{
+  font-size: 36px;
+  color: #125fa4;
+}
+
+#content h2{
+  color: #125fa4;
+}
+
+#content p{
+  font-size: 14px;
+}
+
+#content h1::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #0075ce;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+#content h1:hover::after{
+    width: 100%;
+}
+
+.minor-section:hover{
+  border: 1px solid #0075ce;
+  background-color: #acd0ef;
+  transition: 1s;
+}
