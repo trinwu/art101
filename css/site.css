@@ -1,5 +1,11 @@
 /* we can use a single css file to style all the files in our wwebsite */
 
+*{
+  margin: 5px;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
 /* you can pick your own background colors, text colors, and fonts */
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
