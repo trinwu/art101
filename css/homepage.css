@@ -1,7 +1,60 @@
 /* this css file will only style the homepage of our site */
 
-.cat-photo {
-  margin: 10px;
+#my-portrait {
   max-width: 500px;
+  border-radius: 20px;
+  margin-top: 100px;
+  box-sizing: border-box;
+  transition: 0.5s;
 }
 
+body{
+  background: url(../img/gradient-bg.jpg);
+  background-position: center;
+}
+
+h1{
+  text-align: left;
+  font-size: 72px;
+  letter-spacing: 3px;
+  padding-top: 100px;
+  margin-left: 50px;
+}
+
+p{
+  text-align: left;
+  font-size: 32px;
+  margin-left: 50px; 
+}
+
+.col{
+  flex-basis: 48%;
+  padding: 25px 2px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-me-col{
+  flex-basis: 31%;
+  margin-top: 105px;
+  background-color: rgba(179, 200, 239, 0.773);
+  border-radius: 20px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.about-me-col:hover, #my-portrait:hover{
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+#about-me{
+  margin-left: 30px;
+  margin-right: 30px; 
+  text-align: left;
+  font-size: 14px;
+}
