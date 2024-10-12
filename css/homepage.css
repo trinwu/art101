@@ -21,6 +21,12 @@ h1{
   margin-left: 50px;
 }
 
+h2{
+  text-align: left;
+  letter-spacing: 3px;
+  margin-left: 50px;
+}
+
 p{
   text-align: left;
   font-size: 32px;
@@ -57,4 +63,39 @@ p{
   margin-right: 30px; 
   text-align: left;
   font-size: 14px;
+}
+
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#links{
+  flex: 1;
+  text-align: center;
+}
+#links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+#links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+#links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #8489e2;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+#links ul li:hover::after{
+  width: 100%;
 }
