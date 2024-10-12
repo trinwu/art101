@@ -10,18 +10,18 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #0075ce;
+    border: 1px solid #8489e2;
     background: transparent;
     cursor: pointer;
   }
 
 #content h1{
   font-size: 36px;
-  color: #125fa4;
+  color: white;
 }
 
 #content h2{
-  color: #125fa4;
+  color: white;
 }
 
 #content p{
@@ -32,7 +32,7 @@
     content: '';
     width: 0%;
     height: 2px;
-    background: #0075ce;
+    background: #8489e2;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -42,7 +42,7 @@
 }
 
 .minor-section:hover{
-  border: 1px solid #0075ce;
-  background-color: #acd0ef;
+  border: 1px solid #8489e2;
+  background-color: rgba(179, 200, 239, 0.773);
   transition: 1s;
 }
