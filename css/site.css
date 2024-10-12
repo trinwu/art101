@@ -13,11 +13,6 @@ body {
   background-color: #50808E;
 }
 
-/* we can have rules apply to multiple elements at the same time with commas */
-h1,h2,h3 {
-  font-family: Poppins, sans-serif;
-}
-
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
   margin: 10px;
