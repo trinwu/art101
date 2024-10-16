@@ -18,6 +18,11 @@
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+
+	<!-- Poppins font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100&amp;display=swap" rel="stylesheet">
 </head>
 <body>
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
@@ -26,22 +31,120 @@
 			<h1>Lab 4 - Pseudocoding and Problem-solving</h1>
 			<div class="minor-section">
 					<h2>Challenge</h2>
-					<p>Restate the challenge of the lab here.</p>
+					<p>The goal of this lab was to introduce pseudocoding, which is often used before actual coding takes place.</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Problems</h2>
-					<p>What problems arose? How did you solve them? </p>
+					<p>There were no problems that I encountered during this lab. </p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Reflection</h2>
-					<p>Put your reflections about this assignment here. How did it go? What kind of energy did you put into the assignment? </p>
+					<p>Pseudocoding is something I was already familiar with, as I have practiced it in my previous coding classes. However, this lab still served as a good reminder about why it is a good habit to use pseudocode before you actually begin coding. It helped me to think about how to break down tasks into high-level tasks and further breaking those into sub-tasks.</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Results</h2>
-					<div id="output"></div>
+					<div id="output">
+						
+						<div class="row">
+							<div class="col">
+								<h4>Pseudocode for Making Banana Bread</h4>
+								<p>1. Gather Ingredients and supplies
+									<br>&emsp;&emsp;1.1. Measure out:
+									<br>&emsp;&emsp;&emsp;&emsp;2 to 3 ripe bananas
+									<br>&emsp;&emsp;&emsp;&emsp;1/3 cup melted butter
+									<br>&emsp;&emsp;&emsp;&emsp;1 teaspoon baking soda
+									<br>&emsp;&emsp;&emsp;&emsp;Pinch of salt
+									<br>&emsp;&emsp;&emsp;&emsp;3/4 cup sugar (adjust to taste)
+									<br>&emsp;&emsp;&emsp;&emsp;1 large egg, beaten
+									<br>&emsp;&emsp;&emsp;&emsp;1 teaspoon vanilla extract
+									<br>&emsp;&emsp;&emsp;&emsp;1 1/2 cups all-purpose flour
+									<br>&emsp;&emsp;1.2 Get a loaf pan, a spatula, a fork, and a mixing bowl
+									<br>2. Preheat the Oven
+									<br>&emsp;&emsp;2.1. Set the oven to 350°F to preheat.
+									<br>3. Prepare the Baking Pan
+									<br>&emsp;&emsp;3.1. Grease a 4x8-inch loaf pan with butter or nonstick spray.
+									<br>4. Mash the Bananas
+									<br>&emsp;&emsp;4.1. Peel the ripe bananas. 
+									<br>&emsp;&emsp;4.2. Place them in a large mixing bowl. 
+									<br>&emsp;&emsp;4.3. Mash the bananas using a fork until smooth.
+									<br>5. Mix Wet Ingredients
+									<br>&emsp;&emsp;5.1. Add the melted butter to the mashed bananas.
+									<br>&emsp;&emsp;5.2. Stir in the sugar, beaten egg, and vanilla extract until combined.
+									<br>6. Add Dry Ingredients
+									<br>&emsp;&emsp;6.1. Sprinkle the baking soda and a pinch of salt over the wet mixture.
+									<br>&emsp;&emsp;6.2. Stir in the flour gradually until all ingredients are fully combined.
+									<br>7. Pour the Batter into the Pan
+									<br>&emsp;&emsp;7.1. Pour the banana bread batter into the greased loaf pan. 
+									<br>&emsp;&emsp;7.2. Smooth the top of the batter with a spatula if necessary.
+									<br>8. Bake the Banana Bread
+									<br>&emsp;&emsp;8.1. Place the loaf pan in the preheated oven. 
+									<br>&emsp;&emsp;8.2. Bake for 50-60 minutes, or until a toothpick inserted into the center comes out clean.
+									<br>9. Cool the Bread
+									<br>&emsp;&emsp;9.1. Once the bread is done, remove it from the oven. 
+									<br>&emsp;&emsp;9.2. Let the bread cool in the pan for 10 minutes. 
+									<br>&emsp;&emsp;9.3. Transfer the bread to a wire rack to cool completely.
+									<br>10. Serve and Enjoy
+									<br>&emsp;&emsp;10.1. Once the bread has cooled, slice and serve. 
+									<br>&emsp;&emsp;10.2. Optionally, spread butter or honey on each slice.									
+									</p>
+							</div>
+							<div class="col">
+								<h4>Pseudocode for Rock-Paper-Scissors Game</h4>
+								<p>1. Set Up the Game Environment
+									<br>&emsp;&emsp;1.1. Display the game title and instructions. 
+									<br>&emsp;&emsp;1.2. Provide options for the player to choose between "Rock," "Paper," or "Scissors." 
+									<br>2. Handle Player Input
+									<br>&emsp;&emsp;2.1. Wait for the player to select one of the options (Rock, Paper, or Scissors). 
+									<br>&emsp;&emsp;2.2. Validate the player's input. 
+									<br>3. Generate the Computer's Choice
+									<br>&emsp;&emsp;3.1. Use a random number generator to select Rock, Paper, or Scissors for the computer.
+									<br>4. Compare Player and Computer Choices
+									<br>&emsp;&emsp;4.1. Determine the outcome based on the following rules:
+									<br>&emsp;&emsp;&emsp;&emsp;Rock beats Scissors.
+									<br>&emsp;&emsp;&emsp;&emsp;Scissors beats Paper.
+									<br>&emsp;&emsp;&emsp;&emsp;Paper beats Rock.
+									<br>&emsp;&emsp;&emsp;&emsp;Identical choices result in a tie.
+									<br>5. Display the Result
+									<br>&emsp;&emsp;5.1. Show the player's choice and the computer's choice. 
+									<br>&emsp;&emsp;5.2. Announce the outcome (Win, Loss, or Tie). 
+									<br>6. Ask the Player if They Want to Play Again
+									<br>&emsp;&emsp;6.1. Provide an option for the player to:
+									<br>&emsp;&emsp;&emsp;&emsp;Play another round.
+									<br>&emsp;&emsp;&emsp;&emsp;Quit the game.
+									<br>7. Handle End of Game
+									<br>&emsp;&emsp;7.1. If the player chooses to quit, display a thank-you message. 
+									</p>
+							</div>
+						</div>
+						<h3>My Javascript Code</h3>
+						<pre><code>
+							// lab.js - an implementation of the game rock-paper-scissors
+							// Author: Trinity Wu <trawu@ucsc.edu>
+							// Date: October 17, 2024
+
+							// Set Up the Game Environment
+							// Provide options for the player to choose between "Rock," "Paper," or "Scissors." 
+							// Handle Player Input
+							// Wait for the player to select one of the options (Rock, Paper, or Scissors). 
+							// Validate the player's input. 
+							// Generate the Computer's Choice
+							// Compare Player and Computer Choices
+							// Display the Result
+							// Show the player's choice and the computer's choice. 
+							// Announce the outcome (Win, Loss, or Tie). 
+							// Ask the Player if They Want to Play Again
+							// Handle End of Game
+						</pre></code>
+						<div class="row">
+							<img src="img/javascript-code.png">
+							<div class="layer">
+								<h3>javascript code</h3>
+							</div>
+						</div>
+					</div>
 			</div>
 		</section>
 		<nav id="links">

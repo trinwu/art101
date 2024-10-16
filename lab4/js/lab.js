@@ -13,7 +13,7 @@
   // Show the player's choice and the computer's choice. 
   // Announce the outcome (Win, Loss, or Tie). 
 // Ask the Player if They Want to Play Again
-// 7. Handle End of Game
+// Handle End of Game
 
 
 // Constants
