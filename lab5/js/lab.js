@@ -6,7 +6,7 @@
 make = "Lexus";
 model = "RX";
 color = "Cloudburst Gray";
-year = 2024;
+year = 2022;
 
 // Calculate age
 age = 2024 - year;

@@ -48,13 +48,15 @@ transition: 1s;
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
 }
 
 .row img{
   width: 50%;
   display: block;
   border-radius: 20px;
-  margin-left: 305px;
+
 }
 
 .layer{
@@ -88,20 +90,4 @@ transition: 1s;
 .layer:hover h3{
   bottom: 45%;
   opacity: 1;
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.col{
-  flex-basis: 50%;
-  margin-top: 10px;
-  background-color: rgba(95, 119, 162, 0.773);
-  border-radius: 20px;
-  margin-bottom: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
-  transition: 0.5s;
 }
