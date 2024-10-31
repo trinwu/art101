@@ -17,15 +17,21 @@ console.log("What is the square of 11? ", square(11));
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 console.log("My array: ", arr);
 
+// display array #output div
+$("#output").append("<p>My array: " + arr.join(", ") + "</p>");
+
 // mapResults - results of map function
-var mapResults = arr.map(square);
-console.log("Results of squared array: ", mapResults);
+var squareResults = arr.map(square);
+console.log("Results of squared array: ", squareResults);
 
-// callback that determines if numbers in array nums are odd or not
-mapResults = arr.map(function(x){
-    var results = (x%2 != 0);
-    return results;
-})
+// display square results in the #output div
+$("#output").append("<p>Results of squared array: " + squareResults.join(", ") + "</p>");
 
-// testing oddness
-console.log("Results of oddness array: ", mapResults);
+// callback that determines if numbers in array arr are odd
+var oddResults = arr.map(function(x) {
+    return (x % 2 !== 0);
+});
+console.log("Results of oddness array: ", oddResults);
+
+// display oddness results in the #output div
+$("#output").append("<p>Results of oddness array: " + oddResults.join(", ") + "</p>");
