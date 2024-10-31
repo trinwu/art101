@@ -1,0 +1,94 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #8489e2;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  #content h1{
+  font-size: 36px;
+  color: white;
+  padding-bottom: 50px;
+  }
+  
+  #content h2{
+  color: white;
+  }
+  
+  #content p{
+  font-size: 14px;
+  }
+  
+  #content h1::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #8489e2;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  #content h1:hover::after{
+    width: 100%;
+  }
+  
+  .minor-section:hover{
+  border: 1px solid #8489e2;
+  background-color: rgba(179, 200, 239, 0.773);
+  transition: 1s;
+  }
+  
+  .row{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .row img{
+    width: 50%;
+    display: block;
+    border-radius: 20px;
+  
+  }
+  
+  .layer{
+    background: transparent;
+    height: 95%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 302px;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+  
+  .layer:hover{
+    background: rgba(177, 156, 245, 0.487);
+  }
+  
+  .layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 24px;
+    bottom: 0;
+    left: 85%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .layer:hover h3{
+    bottom: 45%;
+    opacity: 1;
+  }
+  
