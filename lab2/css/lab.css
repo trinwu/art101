@@ -1,9 +1,8 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
-*{
-  margin: 5px;
-  padding: 5px;
+body, p, h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */

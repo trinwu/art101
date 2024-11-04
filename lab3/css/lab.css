@@ -96,3 +96,8 @@ transition: 1s;
 #lab{
   left: 70%;
 }
+
+body, p, h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
