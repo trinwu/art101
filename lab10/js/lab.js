@@ -1,30 +1,41 @@
 /*
-   lab.js - This simple JavaScript/jQuery script appends new elements to an output div.
-
-   Requirements: jQuery must be loaded for this script to work.
+   lab.js - This JavaScript/jQuery script appends conversation elements to an output div,
+   alternating message alignment like a text conversation.
 
    Author: Trinity Wu
    Date: November 7, 2024
 */
 
-// generateRandomText - generates some fake dialogue
+let isLeft = true; // Variable to alternate alignment
+
+// Generate random text for fake dialogue
 function generateRandomText() {
-    const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
     const min = 3;
     const max = 100;
     const randLen = Math.floor(Math.random() * (max - min + 1)) + min;
-    // Get a random starting index to slice the Lorem Ipsum text
     const randStart = Math.floor(Math.random() * (text.length - randLen + 1));
-    // Generate the random Lorem Ipsum-like text
     return text.slice(randStart, randStart + randLen);
 }
 
-// click listener for button
-$("#make-convo").click(function(){
-    // get new fake dialogue
-    const newText = generateRandomText();
+// Function to append a message to the conversation
+function addMessage(content, alignLeft) {
+    const alignmentClass = alignLeft ? 'left' : 'right';
+    $("#output").append(`<div class="text ${alignmentClass}"><p>${content}</p></div>`);
+}
 
-    // append a new div to our output div
-    $("#output").append('<div class="text"><p>' + newText + '</p></div>');
+// Click listener for random text
+$("#make-convo").click(function() {
+    const randomText = generateRandomText();
+    addMessage(randomText, isLeft);
+    isLeft = !isLeft; // Alternate alignment
 });
 
+// Click listener for sending user input
+$("#send-message").click(function() {
+    const userInput = $("#user-input").val();
+    if (userInput.trim()) {
+        addMessage(userInput, true); // Always align user input to the left
+        $("#user-input").val(""); // Clear input field
+    }
+});
