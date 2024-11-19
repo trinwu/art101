@@ -50,7 +50,31 @@
 			<div class="minor-section" id="results">
 				<h2>Results</h2>
 				<div id="input">
-					
+					Where should we stop? <input type="number" min=0 max="1000" id="max"><br>
+					Which factors should print what?<br>
+					<table>
+						<tr>
+							<th>Factor</th>
+							<th>Prints what?</th>
+						</tr>
+						<tr>
+							<td><input type="number" min=0 max="23" id="num0"></td>
+							<td><input type="text" id="text0"></td>
+						</tr>
+						<tr>
+							<td><input type="number" min=0 max="23" id="num1"></td>
+							<td><input type="text" id="text1"></td>
+						</tr>
+						<tr>
+							<td><input type="number" min=0 max="23" id="num2"></td>
+							<td><input type="text" id="text2"></td>
+						</tr>
+						<tr>
+							<td><input type="number" min=0 max="23" id="num3"></td>
+							<td><input type="text" id="text3"></td>
+						</tr>
+					</table>
+					<button id="submit">Run</button>
 				</div>
 				<h3>Output</h3>
 				<div id="output"></div>
